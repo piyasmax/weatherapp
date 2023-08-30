@@ -1,5 +1,5 @@
 const apikey="c7c2e65f9351d0234d1f47785a2eaa55";
- const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
  
 
 const searchBox = document.querySelector(".search input");
@@ -32,12 +32,10 @@ const weatherIcon =document.querySelector(".weather_icon");
      else if(data.Weather[0].main=="Mist"){
         weatherIcon.src="images/mist.png";
      }
-    //  document.querySelector(".weather").style.display="block";
-
-    
  }
   searchBtn.addEventListener("click",()=>{
-    checkWeather(searchBox.value);
+
+     checkWeather(searchBox.value);
     
  })
 
